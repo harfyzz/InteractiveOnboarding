@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		34BEC5202D77542500ABB3CB /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEC51F2D77542500ABB3CB /* RiveRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		34BEC50D2D77536300ABB3CB /* InteractiveOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BEC5202D77542500ABB3CB /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = InteractiveOnboarding;
 			packageProductDependencies = (
+				34BEC51F2D77542500ABB3CB /* RiveRuntime */,
 			);
 			productName = InteractiveOnboarding;
 			productReference = 34BEC50D2D77536300ABB3CB /* InteractiveOnboarding.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 34BEC5042D77536300ABB3CB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				34BEC51E2D77542500ABB3CB /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 34BEC50E2D77536300ABB3CB /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34BEC51E2D77542500ABB3CB /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34BEC51F2D77542500ABB3CB /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEC51E2D77542500ABB3CB /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34BEC5052D77536300ABB3CB /* Project object */;
 }
